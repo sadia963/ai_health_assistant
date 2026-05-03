@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>AI Health Assistant</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #efefef;
+        }
+
+        .chat-box {
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #chat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .msg {
+            display: inline-block;
+            max-width: 70%;
+            margin: 10px 0;
+            padding: 10px 14px;
+            border-radius: 10px;
+            word-wrap: break-word;
+         
+        }
+
+        .user {
+            background: #ffffff;
+            align-self: flex-end;
+            text-align: right;
+        }
+
+   
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px;
+            width: 80px;
+            border: none;
+            border-radius: 20px;
+            margin: 10px 0;
+            background-color: white;
+            font-weight: 600;
+        }
+        button:hover{
+            background-color: #d2d2d2;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="chat-box">
+
+   <center><h1>AI Doctor Chat</h1>
+</center> 
+    <div id="chat"></div>
+
+    <textarea id="symptoms" placeholder="Describe your symptoms..."></textarea>
+
+    <button onclick="sendMessage()">Send</button>
+    <button onclick="startVoice()">Speak</button>
+
+</div>
+
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+</html>
