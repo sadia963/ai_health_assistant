@@ -68,7 +68,7 @@ Returns chat history
 
 🔹 /analyze (POST)
 
-Request:
+Request: In JSON
 
 {
   "symptoms": "fever and headache",
@@ -76,7 +76,7 @@ Request:
   "duration": "2 days"
 }
 
-Response:
+Response: In JSON
 
 {
   "reply": "Possible Causes:\n- ...\n\nHome Care:\n- ..."
@@ -87,5 +87,6 @@ Click Speak button
 Uses browser Speech Recognition
 Converts speech → text
 
-Author:
-Sadia Jawaid, Muskan sheeraz Ali
+🩺 Conclusion
+This AI Health Assistant project is built using Flask, Groq API, SQLite, and a simple web interface. It takes user symptoms as input and uses an AI model to generate possible causes, home care tips, and warning signs in a structured format. All conversations are stored in a database to maintain chat history.
+The project demonstrates how AI can be integrated into web applications to provide basic health guidance. It is designed for educational purposes and is not a replacement for professional medical advice.
